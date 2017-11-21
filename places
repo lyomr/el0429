@@ -1,0 +1,34 @@
+<!-- Located at view/places -->
+<% include partials/header %>
+    <div class="container">
+        <header class="jumbotron">
+            <div class="container">
+                <h1>Welcome to the North England! </h1>
+                <p>view the rich and famous historical places around the anciently known Kingdom of Northumberland</p>
+                <p>
+                    <a class="ui blue big basic button" href="/places/new">Add new place</a>
+                </p>
+            </div>
+        </header>
+        
+        <div class="row text-center" style="display: flex; flex-wrap: wrap;">
+            <!--<h3>Most Popular Sites!</h3>-->
+            <% places.forEach(function(place){ %>
+                <div class="col-md-3 col-sm-6" style="padding-bottom: 10px;">
+                    <div class="thumbnail">
+                        <img src="<%= place.image %>">
+                    </div>
+                    <div class="caption">
+                        <h4><%= place.name %></h4>
+                    </div>
+                    <div class="caption">
+                        <p><%= place.description %>
+                    </div>
+                </div>
+            <% }); %>
+            
+        </div>
+
+    </div>
+        
+<% include partials/footer %>
