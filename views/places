@@ -1,4 +1,3 @@
-<!-- Located at view/places -->
 <% include partials/header %>
     <div class="container">
         <header class="jumbotron">
