@@ -1,0 +1,26 @@
+//located at views/new
+
+<% include partials/header %>
+<div class="container">
+    <div class="row">
+        <h1 style="text-align: center">Add a new place </h1>
+        <div style="width: 30%; margin: 50px auto;">
+            <form action="/places" method="POST">
+                <div class="form-group">
+                    <input class="form-control" type="text" name="name" placeholder="name">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="image" placeholder="image url">
+                </div>
+                <div class="form-group">
+                    <input class="form-control description" type="text" name="description" placeholder="place description">
+                </div>
+                <div class="form-group"> 
+                    <button class="ui blue big basic button">Sumbit</button>
+                </div>
+            </form>
+            <a href="/places" class="ui blue big basic button">Go back to view all places</a>
+        </div>
+    </div>
+</div>
+<% include partials/footer %>
